@@ -16,8 +16,12 @@ body {
   padding: 20px;
   background-color: #ffffff;
 }
-h1, h2 {
+h1 {
   text-align: center;
+  font-family: 'Proza Libre', sans-serif;
+}
+h2 {
+  text-align: left;
   font-family: 'Proza Libre', sans-serif;
 }
 div.contenido {

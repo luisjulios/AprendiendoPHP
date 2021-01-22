@@ -5,7 +5,7 @@
     <title>Aprendiendo PHP</title>
     <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/estilos.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
   </head>
   <body>
 
@@ -20,12 +20,12 @@
 
                   <div class="campo">
                       <label for="nombre">Nombre
-                          <input type="text" name="nombre" id="nombre">
+                          <input type="text" name="nombre" id="nombre" placeholder="Nombre">
                       </label>
                   </div>
                   <div class="campo">
                       <label for="apellido">Apellido
-                          <input type="text" name="apellido" id="apellido">
+                          <input type="text" name="apellido" id="apellido" placeholder="Apellido">
                       </label>
                   </div>
 
@@ -43,17 +43,17 @@
                             <h2>Cursos</h2>
                             <div class="campo">
                                 <label for="html5">HTML5
-                                    <input type="checkbox" name="curso[]" value="html5" id="html5">
+                                    <input type="checkbox" name="curso[]" value="HTML5" id="html5">
                                 </label>
                             </div>
                             <div class="campo">
                                 <label for="css3">CSS3
-                                    <input type="checkbox" name="curso[]" value="css3" id="css3">
+                                    <input type="checkbox" name="curso[]" value="CSS3" id="css3">
                                 </label>
                             </div>
                             <div class="campo">
                                 <label for="javascript">JavaScipt
-                                    <input type="checkbox" name="curso[]" value="javascript" id="javascript">
+                                    <input type="checkbox" name="curso[]" value="JavaScript" id="javascript">
                                 </label>
                             </div>
                   </div>
@@ -91,7 +91,7 @@
             <div class="textarea">
                   <div class="campo">
                     <label for="mensaje"> Mensaje <br/>
-                        <textarea name="mensaje" rows="8" cols="40" id="mensaje"></textarea>
+                        <textarea name="mensaje" rows="8" cols="40" id="mensaje" placeholder="Escriba su mensaje aquí..."></textarea>
                     </label>
                     <input type="submit">
                   </div>
