@@ -35,14 +35,18 @@
           
 
       <?php echo "<h2>Datos personales</h2>";?>
-      <?php	if(!isset($nombre) || trim($nombre) != '') { ?>
-        <p>Nombre: <?php echo $nombre; ?></p>
+      <?php	if(!isset($nombre) || trim($nombre) != '') { 
+                $nuevoNombre = filter_var($nombre, FILTER_SANITIZE_STRING);
+      ?>
+        <p>Nombre: <?php echo $nuevoNombre; ?></p>
       <?php }	else { 
         echo 'Campo "Nombre" obligatorio. <br>';
         } ?>
 
-      <?php	if(!isset($apellido) || trim($apellido) != '') { ?>
-        <p>Apellido: <?php echo $apellido; ?></p>
+      <?php	if(!isset($apellido) || trim($apellido) != '') { 
+                $nuevoApellido = filter_var($apellido, FILTER_SANITIZE_STRING);
+      ?>
+        <p>Apellido: <?php echo $nuevoApellido; ?></p>
       <?php }	else { 
         echo 'Campo "Apellido" obligatorio. <br>';
         } ?>
@@ -127,19 +131,18 @@
 
       <?php//Validar textarea?>
       <?php
-      
-      
-      
-      
+      if(isset($_POST['mensaje'])) {
+        $mensaje = $_POST['mensaje'];
+        $nuevoMensaje = filter_var($mensaje, FILTER_SANITIZE_STRING);
+        if(strlen($nuevoMensaje) > 0 && trim($nuevoMensaje)) {
+          echo "<h2>Mensaje</h2>";
+          echo $nuevoMensaje . ".";
+        } else {
+          echo "<h2>Mensaje</h2>";
+          echo "No ha ingresado algún mensaje.";
+        }
+      }
       ?>
-
-
-
-
-
-
-
-
 
     </div>
   </body>

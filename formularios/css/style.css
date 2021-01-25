@@ -8,13 +8,15 @@ html {
 }
 
 body {
-  background-color: orange;
+  background: rgb(255,101,168);
+  background: linear-gradient(90deg, rgba(255,101,168,1) 0%, rgba(0,117,255,1) 100%);
 }
 .contenedor {
   max-width:1000px;
   margin:0 auto;
   padding: 20px;
   background-color: #ffffff;
+  border-radius: 50px;
 }
 h1 {
   text-align: center;
@@ -67,4 +69,5 @@ div.textarea {
 }
 textarea {
   width: 100%;
+  border-radius: 10px;
 }
